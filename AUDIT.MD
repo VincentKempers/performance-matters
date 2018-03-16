@@ -17,4 +17,10 @@ Minified CSS files!
 
 The CSS that is minified changed a lot on slow 3G setting. Especially the bootstrap file. a Whole second! WOAH!.
 
-#
+# webp
+
+[Without webp](without-webp.png)
+it takes 30 seconds to load the page without webp
+
+[With webp](with-webp.png)
+it takes 18 seconds to load the page with webp
