@@ -7,16 +7,28 @@ Font loaded
 ![font on fast](font-on-fast.png)
 Font loaded
 
+Used FontFaceObserver.js (which you can find in the vendor directory). To make the font-face work i used the code. Source : [presentation of Declan of Voorhoede](https://www.voorhoede.nl/en/blog/why-our-website-is-faster-than-yours/)
+
+```JS
+// (include FontFaceObserver here)
+  var font = new FontFaceObserver('source_sans_pro');
+  var html = document.documentElement;
+// load font async, then enhance HTML:
+font.load().then(function () {
+  html.className += ' fonts-loaded';});
+```
+
 # minfied CSS
 
 ![Unminified CSS](image_2018-03-13_17-32-15.png)
 Unminified CSS files!
 
-
 ![Minified CSS](minified.png)
 Minified CSS files!
 
 The CSS that is minified changed a lot on slow 3G setting. Especially the bootstrap file. a Whole second! WOAH!.
+
+I used [css minifier](https://cssminifier.com/) to minify it for the assignment. You could use packages for this a big one is [css-minifiers](https://www.npmjs.com/package/css-minifiers).
 
 # webp
 
@@ -25,6 +37,8 @@ it takes 30 seconds to load the page without webp
 
 ![With webp](with-webp.png)
 it takes 18 seconds to load the page with webp
+
+To convert the images in `.webp` i used the website [Convertio](https://convertio.co/nl/webp-converter/). It works fine and it cuts a lot of load time.
 
 # Lazyloading
 
@@ -67,23 +81,38 @@ function preloadImage(img) {
   img.src = src;
 }
 
+```
+
 # Minified JavaScript
 
-[with minified JavaScript](without-minified-JS.png)
-The bootstrap.js File not minified
+![with minified JavaScript](without-minified-JS.png)
+The bootstrap.js file not minified
 
-[with minified JavaScript](with-minified-JS.png)
-The bootstrap.js File minified
+![with minified JavaScript](with-minified-JS.png)
+The bootstrap.js file minified
 
-[with minified JavaScript](without-minified-JS.png)
+![with minified JavaScript](without-minified-JS.png)
 All unminified files
 
-[All Minified JavaScript](all-files-minified.png)
+![All Minified JavaScript](all-files-minified.png)
 All minified files
 
-```
+You could use a package to minify your javascript but in the case of seeing a difference. I used the https://jscompress.com/ <- compress the JS/Minify.  
+
 # Text Compression
 
+![without text compression](without-text-compression.png)
+without text compression.
+
+![with text compression](master-first-meaningful-pain.png)
 Used compression npm package.
 
-without text compression.
+## how
+
+Used npm package compression.
+[Compression on NPM](https://www.npmjs.com/package/compression)
+
+In the server.js file i required the compression and had to call it with.
+```JS
+app.use(compression());
+```
