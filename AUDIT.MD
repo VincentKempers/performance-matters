@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Fonts
 
 ![font on slow](font-on-slow.png)
@@ -75,6 +75,3 @@ All unminified files
 All minified files
 
 ```
-=======
-
->>>>>>> 630c78b6c71431d6d309186b4601a028ba692b6c
