@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Fonts
 
 ![font on slow](font-on-slow.png)
@@ -20,17 +20,24 @@ The CSS that is minified changed a lot on slow 3G setting. Especially the bootst
 
 # webp
 
-[Without webp](without-webp.png)
+![Without webp](without-webp.png)
 it takes 30 seconds to load the page without webp
 
-[With webp](with-webp.png)
+![With webp](with-webp.png)
 it takes 18 seconds to load the page with webp
 
 # Lazyloading
 
-(with LazyLoading)[with-lazy-loading.png]
+![without LazyLoading](without-lazy-loading.png)
+Without the lazyloading.
+
+![with LazyLoading](with-lazy-loading.png)
 The website loading with lazyloading. The red line is the indicator that the loading is done but there are things to be loaded in.
 After the red line the images load in because you scrolled there.
+
+![with LazyLoading](master-first-meaningful-pain.png)
+Without the lazyloading.
+
 
 ```JS
 
@@ -75,6 +82,8 @@ All unminified files
 All minified files
 
 ```
-=======
+# Text Compression
 
->>>>>>> 630c78b6c71431d6d309186b4601a028ba692b6c
+Used compression npm package.
+
+without text compression.
