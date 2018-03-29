@@ -137,7 +137,9 @@ So i ran the test again without critical CSS and Well....
 
 It actually slowed a lot down! As for performance.
 ![without critical CSS](without-critical-css.png)
+_going from 87 to a 97 +/-_
 
+LoadCSS was questioned. But it actually did what it had to do. The first meaningful paint is in the green... (_and i kinda like green_). 
 
 ### Images Webp
 
