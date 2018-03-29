@@ -126,3 +126,12 @@ Restarted my chrome, my laptop, it just wouldn't fix?
 
 But on Chrome Canary it works just fine ?!
 ![Performance on chrome canary](Performance-network-test.png)
+
+## Without critical css
+
+So i ran the test again without critical CSS and Well....
+
+- [x] critical css wasn't needed.
+
+It actually slowed a lot down! As for performance.
+![without critical CSS](without-critical-css.png)
