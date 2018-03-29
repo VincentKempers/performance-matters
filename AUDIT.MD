@@ -120,6 +120,8 @@ app.use(compression());
 
 ## After Feedback
 
+### Disable Cache
+
 Well i did my tests with "disable cache on" BUT i have this awful bug now that won't show the files in my chrome.
 Restarted my chrome, my laptop, it just wouldn't fix?
 ![i just don't know why](network-test-without-caching.png)
@@ -127,7 +129,7 @@ Restarted my chrome, my laptop, it just wouldn't fix?
 But on Chrome Canary it works just fine ?!
 ![Performance on chrome canary](Performance-network-test.png)
 
-## Without critical css
+### Without critical css
 
 So i ran the test again without critical CSS and Well....
 
@@ -135,3 +137,15 @@ So i ran the test again without critical CSS and Well....
 
 It actually slowed a lot down! As for performance.
 ![without critical CSS](without-critical-css.png)
+
+
+### Images Webp
+
+So i created a fallback so you can view the jpg on other browsers and you can view webp on Chrome.
+![on canary](oncanary.png)
+
+_On Chrome Canary_
+
+![on firefox](onfirefox.png)
+
+_On Firefox!_
