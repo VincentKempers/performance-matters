@@ -116,3 +116,13 @@ In the server.js file i required the compression and had to call it with.
 ```JS
 app.use(compression());
 ```
+
+
+## After Feedback
+
+Well i did my tests with "disable cache on" BUT i have this awful bug now that won't show the files in my chrome.
+Restarted my chrome, my laptop, it just wouldn't fix?
+![i just don't know why](network-test-without-caching.png)
+
+But on Chrome Canary it works just fine ?!
+![Performance on chrome canary](Performance-network-test.png)
